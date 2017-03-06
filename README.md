@@ -1,2 +1,3 @@
-# Static-Code-Analyzer
-Built a web interface to a static analysis tool and allow the user to run static analysis on files uploaded by user and provide a report with the analysis.
+The web interface for static analysis tool is deployed in Apache server. Users are allowed to register an account with the system. Once registered the users are provided allowed to login to the system. If the login is successful the user is redirected to the homepage. The user has option to upload a CPP file to the server, the server runs the static Analysis tool CPPCheck on the file and saves the report to database. The home page also shows the history of all the files the user has uploaded and their static analysis reports.
+The input fields in the application are escaped using mysql_real_escape_string to prevent SQL Injection attacks. Passwords are hashed using MD5 for increased security. Session is handled in all the pages to prevent unauthorized access. Invalid File Types are checked and limit for file size is also handled.
+
