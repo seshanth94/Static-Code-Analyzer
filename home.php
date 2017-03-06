@@ -12,7 +12,7 @@ $userid = $_SESSION['userid'];
 </head>
 <body>
 
- <h2>Static Code Analyzer Online</h2> 
+ <h2>Static Code Analyzer</h2> 
  <br/>
   <div class="container">
   <h3>Welcome <?php echo $_SESSION['username'];?>! <a href="logout.php" tite="Logout" style="float:right">Logout</a></h3>
